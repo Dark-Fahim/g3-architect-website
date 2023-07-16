@@ -19,8 +19,9 @@ a{
 /* Common styles */
 
 .container{
-    max-width: 1440px;
+    max-width: 1450px;
     margin: 0 auto;
+    padding: 10px;
 }
 .header-title{
     color: #131313;
@@ -124,7 +125,7 @@ header{
 .fact-details{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
@@ -155,6 +156,21 @@ header{
     color: #727272;
     font-weight: 600;
     margin-top: 10px;
+}
+
+/* Sponsor Section Styles */
+.sponsor-details{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sponsors > img{
+    width: 150px;
 }
 
 /* responsive media queries */
@@ -200,6 +216,12 @@ header{
     .box{
         margin: 10px auto;
 
+    }
+    .sponsors{
+        flex-direction: column;
+    }
+    .sponsors>img{
+        margin-top: 30px;
     }
 }
 
