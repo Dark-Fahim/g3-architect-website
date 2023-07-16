@@ -36,6 +36,10 @@ a{
     font-weight: 600;
     cursor: pointer;
 }
+.description{
+    color: #727272;
+    margin: 20px auto;
+}
 /* Header styles */
 
 header{
@@ -89,6 +93,31 @@ header{
     width: 100%;
 }
 
+
+/* feature section styles */
+.feature-container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.quick-list{
+    font-weight: 500;
+    color: #727272;
+}
+.header-title .text-feature{
+    color: #FF900E;
+}
+
+
+
+
 /* responsive media queries */
 /* Mobile devices */
 @media screen and (max-width: 576px) {
@@ -108,6 +137,17 @@ header{
         padding: 7px 12px;
         font-size: 1rem;
     }
+    .feature-container{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+    .feature-images{
+        grid-template-columns: 1fr;
+    }
+    .header-title{
+        font-size: 2rem;
+    }
 }
 
 /* tablet Devices */
@@ -122,5 +162,19 @@ header{
     }
     .banner-title{
         font-size: 3rem;
+    }
+    .feature-container{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+    .header-title{
+        font-size: 2.5rem;
+    }
+    .feature-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-images img{
+        width: 100%;
     }
 }
